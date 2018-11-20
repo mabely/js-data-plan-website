@@ -1,0 +1,30 @@
+/* Box model */
+ *{
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: auto;
+  }
+
+/* Media query */
+@media screen and (min-width: 1024px){
+
+}
+/* Flexible images */
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Older browsers don't recognise html5 and will not recognise these elements and make them inline, this will fix it */
+article, aside, footer, header, main, nav, section{
+  display: block;
+}
+/* These are all form elements and browsers give them many out-of-the-box styles */
+button, fieldset, input, textarea, select, fieldset {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    outline: 0;
+    -webkit-appearance: none;
+  }
