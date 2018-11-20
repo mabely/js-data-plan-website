@@ -9,3 +9,7 @@ box-sizing: border-box;
   width: 1024px;
   margin: 0 auto;
 }
+
+#calculator{
+  background-color: red;
+}
