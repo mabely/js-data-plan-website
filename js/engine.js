@@ -3,6 +3,8 @@
 var gb_price = 0;
 var final_price_lw = 0;
 var billing_frequency = 0;
+var data_mins = 0;
+var final_price_c = 0;
 
 $('.gb-button').click(function(event){
    gb_price = parseInt(this.getAttribute("value"));
@@ -27,12 +29,24 @@ $('.gb-button').click(function(event){
  calc_final_price_lw();
 });
 
+
 function calc_final_price_lw(){
   final_price_lw = gb_price * billing_frequency;
   console.log("Final " + final_price_lw);
-    $('#final-price').text(final_price_lw);
+    $('#final-price-lw').text(final_price_lw);
 }
 
+$('.mins-button').click(function(event){
+data_mins = parseInt(this.getAttribute("data-mins"));
+console.log(data_mins);
+calc_final_price_c();
+});
+
+function calc_final_price_c(){
+  final_price_c = (gb_price + data_mins) * billing_frequency;
+  console.log("Final " + final_price_c);
+    $('#final-price-c').text(final_price_c);
+}
 
 //
 // var gb = prices();
