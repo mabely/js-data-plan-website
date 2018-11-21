@@ -5,13 +5,6 @@ $('.gb-button').click(function(event){
   var gb_price = parseInt(this.getAttribute("value"));
    console.log(gb_price);
    return gb_price;
-  // fetchprices(gb_price);
-
-  // $('#alcoholic').text(beer);
-  // $('#play_you').text(play_you);
-  // var play_machine = computer_move();
-  // compare(play_you, play_machine);
-  // score(verdict);
 });
 
 // function fetchprices(gb_price)
@@ -26,18 +19,19 @@ $('.gb-button').click(function(event){
 //   }
 // }
 
-
  $('.pay-frequency-button').click(function(event){
  var billing_frequency = parseInt(this.getAttribute("data-billing"));
  console.log(billing_frequency);
  return billing_frequency;
-calc_final_price_lw(gb_price, billing_frequency);
+ console.log(gb_price);
 });
 
 function calc_final_price_lw (){
-  var final_price_lw = (gb_price*billing_frequency);
+  var final_price_lw = gb_price * billing_frequency;
   console.log(final_price_lw);
+  return final_price_lw;
 }
+
 
 //
 // var gb = prices();
@@ -45,5 +39,3 @@ function calc_final_price_lw (){
 // gb[i] = prices[i]
 // return gb;
 // }
-
-//console.log(gb);
