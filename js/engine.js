@@ -11,6 +11,38 @@ $('.gb-button').click(function(event){
    console.log("GB price " + gb_price);
 });
 
+ $('.pay-frequency-button').click(function(event){
+ billing_frequency = parseInt(this.getAttribute("data-billing"));
+ console.log("Billing freq " + billing_frequency);
+ calc_final_price_lw();
+ // calc_final_price_c();
+});
+
+function calc_final_price_lw(){
+  final_price_lw = gb_price * billing_frequency;
+  console.log("LW final price " + final_price_lw);
+    $('#final-price-lw').text(final_price_lw);
+}
+
+$('.mins-button').click(function(event){
+data_mins = parseInt(this.getAttribute("data-mins"));
+console.log('Mins price ' + data_mins);
+calc_final_price_c();
+});
+
+function calc_final_price_c(){
+  final_price_c = gb_price + data_mins * billing_frequency;
+  console.log('C final price ' + final_price_c);
+    $('#final-price-c').text(final_price_c);
+}
+
+//
+// var gb = prices();
+// for (i=0; i<3; i++){
+// gb[i] = prices[i]
+// return gb;
+// }
+
 // function fetchprices(gb_price)
 // {
 //   if (gb_price == '15'){
@@ -21,36 +53,4 @@ $('.gb-button').click(function(event){
 //     // beer = 'dunno';
 //     $('#final-price').text('dunno2');
 //   }
-// }
-
- $('.pay-frequency-button').click(function(event){
- billing_frequency = parseInt(this.getAttribute("data-billing"));
- console.log("Billing freq " + billing_frequency);
- calc_final_price_lw();
-});
-
-
-function calc_final_price_lw(){
-  final_price_lw = gb_price * billing_frequency;
-  console.log("Final " + final_price_lw);
-    $('#final-price-lw').text(final_price_lw);
-}
-
-$('.mins-button').click(function(event){
-data_mins = parseInt(this.getAttribute("data-mins"));
-console.log(data_mins);
-calc_final_price_c();
-});
-
-function calc_final_price_c(){
-  final_price_c = (gb_price + data_mins) * billing_frequency;
-  console.log("Final " + final_price_c);
-    $('#final-price-c').text(final_price_c);
-}
-
-//
-// var gb = prices();
-// for (i=0; i<3; i++){
-// gb[i] = prices[i]
-// return gb;
 // }
