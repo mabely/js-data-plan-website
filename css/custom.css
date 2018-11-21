@@ -12,20 +12,29 @@ box-sizing: border-box;
 
 #calculator{
   background-color: red;
+  padding: 30px;
 }
 
 #packages {
   background-color: blue;
+  padding: 30px;
 }
 
 #mission {
   background-color: green;
+  padding: 30px;
+}
+#mission h2{
+  padding-bottom: 40px;
 }
 
 #speech-bubble {
   position: relative;
 	background: #00aabb;
 	border-radius: .4em;
+  max-width: 85%;
+  padding: 15px;
+
 }
 
 #speech-bubble:after {
