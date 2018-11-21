@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-GB">
 
 	<head>
@@ -33,7 +33,7 @@
 				    </a>
 				    <ul class="dropdown-menu">
 				      <li>
-								<a class="dropdown-item" href="lone-wolf.html">Lone Wolf</a>
+								<a class="dropdown-item" href="">Lone Wolf</a>
 							</li>
 							<li>
 								<a class="dropdown-item" href="">Chatterbox</a>
@@ -54,111 +54,78 @@
 
 <!-- JUMBOTRON -->
 		<header>
-		<div class="jumbotron">
-		  <h1>Hello, world!</h1>
-		  <p>...</p>
-		</div>
+		<div class="jumbotron container">
+			<div class="row">
+				<div class="col-md-8">
+					<p class="display-2">Lone Wolf</p>
+					<p>Data only blablabla</p>
+				</div><!--END OF COL-MD-8-->
+				<div class="col-md-4">
+					<p>Starting from £15</p>
+				</div><!--END OF COL-MD-4-->
+
+			</div> <!--END OF ROW-->
+		</div> <!--END OF JUMBOTRON CONTAINER-->
 		</header>
 <!-- END OF JUMBOTRON -->
 
 <!-- CALCULATOR -->
 		<main>
 		<section class="container" id="calculator">
-			<h2>Calculator</h2>
+			<div class="row"> <!--ROW FOR CALCULATOR AND CALL-TO-ACTION-BUTTON-->
+				<div class="col-md-8">
 
-			<!-- LONEWOLF -->
-			<section id="lone-wolf">
-				<div id="gb">
-					<button id="3gb" value="15" type="button" class="lw-gb-button btn btn-primary btn-lg">3GB</button>
-					<button id="6gb" value="17" type="button" class="lw-gb-button btn btn-primary btn-lg">6GB</button>
-					<button id="15gb" value="22" type="button" class="lw-gb-button btn btn-primary btn-lg">15GB</button>
-					<button id="30gb" value="27" type="button" class="lw-gb-button btn btn-primary btn-lg">30GB</button>
-				</div>
-				<div id="pay-frequency">
-					<button id="monthly" data-billing="1" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
-					<button id="annually" data-billing="12" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
-				</div>
-				<div>
-					<h5>Price: £<span id = "final-price-lw"> </span></h5>
-				</div>
-			</section>
-			<!--END OF LONE-WOLF-->
+					<h2>Calculator</h2>
 
-			<!-- CHATTERBOX -->
-			<section id="chatterbox">
-				<div id="gb">
-					<button id="1gb" value="14" type="button" class="c-gb-button btn btn-primary btn-lg">1GB</button>
-					<button id="6gb" value="18" type="button" class="c-gb-button btn btn-primary btn-lg">6GB</button>
-					<button id="10gb" value="20" type="button" class="c-gb-button btn btn-primary btn-lg">10GB</button>
-					<button id="20gb" value="30" type="button" class="c-gb-button btn btn-primary btn-lg">20GB</button>
-				</div>
+					<!-- LONEWOLF -->
+					<section id="lone-wolf">
+						<div id="gb">
+							<button id="3gb" value="15" type="button" class="lw-gb-button btn btn-primary btn-lg">3GB</button>
+							<button id="6gb" value="17" type="button" class="lw-gb-button btn btn-primary btn-lg">6GB</button>
+							<button id="15gb" value="22" type="button" class="lw-gb-button btn btn-primary btn-lg">15GB</button>
+							<button id="30gb" value="27" type="button" class="lw-gb-button btn btn-primary btn-lg">30GB</button>
+						</div>
+						<div id="pay-frequency">
+							<button id="monthly" data-billing="1" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
+							<button id="annually" data-billing="12" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
+						</div>
+						<div>
+							<h5>Price: £<span id = "final-price-lw"> </span></h5>
+						</div>
+					</section>
+					<!--END OF LONE-WOLF-->
 
-				<div id="mins">
-					<button id="180mins" data-mins="3" type="button" class="mins-button btn btn-primary btn-lg">180 mins</button>
-					<button id="300mins" data-mins="5" type="button" class="mins-button btn btn-primary btn-lg">300 mins</button>
-					<button id="600mins" data-mins="10" type="button" class="mins-button btn btn-primary btn-lg">600 mins</button>
-					<button id="unlimited_mins" data-mins="12" type="button" class="mins-button btn btn-primary btn-lg">unlimited mins</button>
-				</div>
+					<!-- CHATTERBOX -->
+					<section id="chatterbox">
+						<div id="gb">
+							<button id="1gb" value="14" type="button" class="c-gb-button btn btn-primary btn-lg">1GB</button>
+							<button id="6gb" value="18" type="button" class="c-gb-button btn btn-primary btn-lg">6GB</button>
+							<button id="10gb" value="20" type="button" class="c-gb-button btn btn-primary btn-lg">10GB</button>
+							<button id="20gb" value="30" type="button" class="c-gb-button btn btn-primary btn-lg">20GB</button>
+						</div>
 
-				<div id="pay-frequency">
-					<button id="monthly" data-billing="1" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
-					<button id="annually" data-billing="12" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
-				</div>
-				<div>
-					<h5>Price: £<span id = "final-price-c"> </span></h5>
-				</div>
-			</section> <!--END OF CHATTERBOX-->
+						<div id="mins">
+							<button id="180mins" data-mins="3" type="button" class="mins-button btn btn-primary btn-lg">180 mins</button>
+							<button id="300mins" data-mins="5" type="button" class="mins-button btn btn-primary btn-lg">300 mins</button>
+							<button id="600mins" data-mins="10" type="button" class="mins-button btn btn-primary btn-lg">600 mins</button>
+							<button id="unlimited_mins" data-mins="12" type="button" class="mins-button btn btn-primary btn-lg">unlimited mins</button>
+						</div>
 
-
+						<div id="pay-frequency">
+							<button id="monthly" data-billing="1" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
+							<button id="annually" data-billing="12" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
+						</div>
+						<div>
+							<h5>Price: £<span id = "final-price-c"> </span></h5>
+						</div>
+					</section> <!--END OF CHATTERBOX-->
+				</div><!--END OF COL-MD-10-->
+				<div class="col-md-2">
+					<button type="button" class="btn btn-primary btn-lg">Buy Lone Wolf now!</button>
+				</div><!--END OF COL-MD-2-->
+			</div> <!--END OF ROW FOR CALCULATOR AND CALL-TO-ACTION-BUTTON-->
 		</section>
 <!-- END OF CALCULATOR -->
-
-<!-- PACKAGES -->
-		<section class="container" id="packages">
-			<h2>Packages</h2>
-			<div class="row">
-				<div class="card col-md-4">
-				  <img class="card-img-top" src="" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title">Lone Wolf</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
-
-					<div class="card col-md-4">
-					  <img class="card-img-top" src="" alt="Card image cap">
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-primary">Go somewhere</a>
-					  </div>
-					</div>
-
-					<div class="card col-md-4">
-					  <img class="card-img-top" src="" alt="Card image cap">
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-primary">Go somewhere</a>
-					  </div>
-					</div>
-			</div><!--Closing Packages card row-->
-		</section>
-<!-- END OF PACKAGES SECTION -->
-
-<!-- MISSION SECTION -->
-		<section class="container" id="mission">
-			<h2>Mission</h2>
-			<div id="speech-bubble" class="text-center lead">
-				<p>
-					We are dedicated to delievering best network services on the planet, so that you can chat</p>
-					<p class="h3">whenever you want</p>
-					<p class="h4">wherever you want</p>
-			</div>
-		</section>
-<!-- END OF MISSION SECTION -->
-
 		</main>
 
 <!-- FOOTER -->
