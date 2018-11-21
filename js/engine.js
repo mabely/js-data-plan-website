@@ -1,5 +1,5 @@
-var gb = ["3GB", "6GB", "15GB", "30GB"];
-var prices = ['£15', '£17', '£22', '£27'];
+// var gb_lw = ["3GB", "6GB", "15GB", "30GB"];
+// var prices_lw = ['£15', '£17', '£22', '£27'];
 var gb_price = 0;
 var final_price_lw = 0;
 var billing_frequency = 0;
