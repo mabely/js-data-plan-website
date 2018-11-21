@@ -116,11 +116,21 @@
 <!-- END OF MISSION SECTION -->
 <section id="test">
 
+<div id="gb">
 
-	<button id="3gb" value="15" type="button" class="btn btn-primary btn-lg">3GB</button>
-	<button id="6gb" value="17" type="button" class="btn btn-primary btn-lg">6GB</button>
-	<button id="15gb" value="22" type="button" class="btn btn-primary btn-lg">15GB</button>
-	<button id="30gb" value="27" type="button" class="btn btn-primary btn-lg">30GB</button>
+	<button id="3gb" value="15" type="button" class="gb-button btn btn-primary btn-lg">3GB</button>
+	<button id="6gb" value="17" type="button" class="gb-button btn btn-primary btn-lg">6GB</button>
+	<button id="15gb" value="22" type="button" class="gb-button btn btn-primary btn-lg">15GB</button>
+	<button id="30gb" value="27" type="button" class="gb-button btn btn-primary btn-lg">30GB</button>
+
+</div>
+<div id="pay-frequency">
+	<button id="monthly" data-billing="1" type="button" class="pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
+	<button id="annually" data-billing="12" type="button" class="pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
+</div>
+	<div>
+		<h5>Price: £<span id = "final-price"> </span></h5>
+	</div>
 
 </section>
 		</main>
@@ -189,7 +199,7 @@
 	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 	</script>
-	<!-- <script src="./js/engine.js"></script> -->
+	<script src="./js/engine.js"></script>
 	</body>
 
 </html>
