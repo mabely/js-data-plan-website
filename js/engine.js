@@ -7,9 +7,9 @@ var data_mins = 0;
 var final_price_c = 0;
 
 $('.lw-gb-button').click(function(event){
-  $('.lw-gb-button').css('color', 'white');
+  $('.lw-gb-button').css('background-color', '#C3D677');
    gb_price = parseInt(this.getAttribute("value"));
-   $(this).css('color', 'red');
+   $(this).css('background-color', '#94AB34');
    console.log("GB price " + gb_price);
 });
 

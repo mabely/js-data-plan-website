@@ -85,10 +85,11 @@ box-sizing: border-box;
   border-color:  #94AB34!important;
   background-color: #94AB34!important;
 }
-.btn:active, .btn:focus {
-  box-shadow: red;
-  border-color: red;
-}
+/* WHY DOESN'T THIS WORK?!?!?!?!?!
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: #94AB34!important;
+  border-color: #94AB34!important;
+} */
 .final-price-block h5{
   font-size: 30px;
   padding-top: 30px;
