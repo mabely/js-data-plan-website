@@ -48,6 +48,14 @@ box-sizing: border-box;
   padding: 20px;
   max-width: 1000px;
 }
+#chatterbox-calc{
+  padding: 20px;
+  max-width: 1000px;
+}
+#family-calc{
+  padding: 20px;
+  max-width: 1000px;
+}
 .calc-labels{
   display: block;
 }
