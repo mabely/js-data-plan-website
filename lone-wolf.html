@@ -17,10 +17,11 @@
 
 <!-- NAVIGATION -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#">Kable logo</a>
+			<a class="navbar-brand" href="#"><img src="images/logos-backgrounds/logo-circle-nosource.png" height="42" width="42"/></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+
 			<div class="collapse navbar-collapse" id="navbarNav" role="navigation">
 				<ul class="nav navbar-nav nav-pills">
 					<li class="nav-item">
@@ -33,99 +34,157 @@
 				    </a>
 				    <ul class="dropdown-menu">
 				      <li>
-								<a class="dropdown-item" href="">Lone Wolf</a>
+								<a class="dropdown-item" href="lone-wolf.html">Lone Wolf</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="">Chatterbox</a>
+								<a class="dropdown-item" href="chatterbox.html">Chatterbox</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="">Family</a>
+								<a class="dropdown-item" href="family.html">Family</a>
 							</li>
 				    </ul>
 				  </li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="">Contact</a>
+						<a class="nav-link" href="./contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 <!-- END OF NAVIGATION -->
 
-<!-- JUMBOTRON -->
+<!-- UPPER PART -->
 		<header>
-		<div class="jumbotron container">
-			<div class="row">
-				<div class="col-md-8">
-					<p class="display-2">Lone Wolf</p>
-					<p>Data only blablabla</p>
-				</div><!--END OF COL-MD-8-->
-				<div class="col-md-4">
-					<p>Starting from £15</p>
-				</div><!--END OF COL-MD-4-->
+			<div class="container package-page-overview">
+					<div class="row">
+						<div class="card col-md-6 card-border">
+							<img class="card-img-top img-fluid" src="images/logos-backgrounds/icon512/wolf.png" alt="Drawing of a cutle little wolf">
+						</div> <!-- COL-MD-6-->
+						<div class="card col-md-6 card-border">
+							<div class="card-body text-center">
+								<h1 class="display-4"><strong>Lone Wolf</strong></h1>
+									<div class="text-without-heading">
+									<p id="short-description">Data only</p>
+									<h3 >From £15</h3>
+									<button type="button" class="btn btn-primary btn-lg" id="call-to-action-buy-now-button">Buy Lone Wolf now!</button>
+								</div><!--TEXT-WITHOUT-HEADING-->
+							</div> <!--TEXT FOR CARD ENDS HERE-->
+						</div> <!-- COL-MD-6-->
+					</div><!--ROW-->
+			</div> <!--CONTAINER PACKAGE-PAGE-OVERVIEW-->
+	</header>
+<!-- END OF UPPER PART -->
 
-			</div> <!--END OF ROW-->
-		</div> <!--END OF JUMBOTRON CONTAINER-->
-		</header>
-<!-- END OF JUMBOTRON -->
+<!-- PACKAGE INFO -->
+		<section class="container info-on-each-package">
+			<p class="display-4">You need Data but nothing else? The <strong>Lone Wolf</strong> will be the perfect option for you!</p>
+			<p>This is what you get:</p>
+			<ul>
+				<li>Data only simcard</li>
+				<li>Choose GB per month: 3GB (£15.00), 6GB (£17.00), 15GB (£22.00) or 30GB (£27.00)</li>
+				<li>Pay monthly / annually</li>
+			</ul>
+			<p>Not exactly what you're looking for? Check out our calculator below!</p>
+		</section>
+<!-- END OF PACKAGE INFO SECTION -->
 
 <!-- CALCULATOR -->
 		<main>
 		<section class="container" id="calculator">
-			<div class="row"> <!--ROW FOR CALCULATOR AND CALL-TO-ACTION-BUTTON-->
-				<div class="col-md-8">
+			<h2>Mobile Plan Calculator</h2>
+			<p id="calc-intro">
+				We know we offer the best value and service, but you might not know that. <span id="calc-subheading">Check out which mobile plan fits you best using our calculator.</span>
+			</p>
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			    <a class="nav-item nav-link active display-4" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-pressed="true"aria-selected="true">Lone Wolf</a>
+			    <a class="nav-item nav-link display-4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Chatterbox</a>
+			    <a class="nav-item nav-link display-4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Family</a>
+			  </div>
+			</nav>
 
-					<h2>Calculator</h2>
+		<!-- CONTENT -->
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
 					<!-- LONEWOLF -->
-					<section id="lone-wolf">
-						<div id="gb">
-							<button id="3gb" value="15" type="button" class="lw-gb-button btn btn-primary btn-lg">3GB</button>
-							<button id="6gb" value="17" type="button" class="lw-gb-button btn btn-primary btn-lg">6GB</button>
-							<button id="15gb" value="22" type="button" class="lw-gb-button btn btn-primary btn-lg">15GB</button>
-							<button id="30gb" value="27" type="button" class="lw-gb-button btn btn-primary btn-lg">30GB</button>
-						</div>
-						<div id="pay-frequency">
-							<button id="monthly" data-billing="1" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
-							<button id="annually" data-billing="12" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
-						</div>
-						<div>
-							<h5>Price: £<span id = "final-price-lw"> </span></h5>
+					<section id="lonewolf-calc">
+							<div class="calc-blocks">
+								<label class="gb-label calc-labels"><h6>1. How much data do you want?</h6></label>
+								<div class="btn-group gb-btn-grp" role="group" aria-label="Basic example" id="gb">
+										<button id="3gb" value="15" type="button" class="lw-gb-button btn btn-primary btn-lg">3GB</button>
+										<button id="6gb" value="17" type="button" class="lw-gb-button btn btn-primary btn-lg">6GB</button>
+										<button id="15gb" value="22" type="button" class="lw-gb-button btn btn-primary btn-lg">15GB</button>
+										<button id="30gb" value="27" type="button" class="lw-gb-button btn btn-primary btn-lg">30GB</button>
+								</div>
+							</div>
+							<div class="calc-blocks">
+								<label class="pay-frequency-label calc-labels"><h6>2. How do you want to be billed?</h6></label>
+								<div class="btn-group pay-frequency-btn-grp" role="group" aria-label="Basic example" id="pay-frequency">
+										<button id="monthly" data-billing="1" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Monthly</button>
+										<button id="annually" data-billing="12" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Annually</button>
+								</div>
+							</div>
+
+						<div class="final-price-block">
+							<h5 class="display-4">Price: £<span id = "final-price-lw"> </span></h5>
 						</div>
 					</section>
-					<!--END OF LONE-WOLF-->
+					<!-- END OF LW -->
+				</div>
 
 					<!-- CHATTERBOX -->
-					<section id="chatterbox">
-						<div id="gb">
-							<button id="1gb" value="14" type="button" class="c-gb-button btn btn-primary btn-lg">1GB</button>
-							<button id="6gb" value="18" type="button" class="c-gb-button btn btn-primary btn-lg">6GB</button>
-							<button id="10gb" value="20" type="button" class="c-gb-button btn btn-primary btn-lg">10GB</button>
-							<button id="20gb" value="30" type="button" class="c-gb-button btn btn-primary btn-lg">20GB</button>
-						</div>
 
-						<div id="mins">
-							<button id="180mins" data-mins="3" type="button" class="mins-button btn btn-primary btn-lg">180 mins</button>
-							<button id="300mins" data-mins="5" type="button" class="mins-button btn btn-primary btn-lg">300 mins</button>
-							<button id="600mins" data-mins="10" type="button" class="mins-button btn btn-primary btn-lg">600 mins</button>
-							<button id="unlimited_mins" data-mins="12" type="button" class="mins-button btn btn-primary btn-lg">unlimited mins</button>
-						</div>
+				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<!-- CHATTERBOX -->
+					<section id="chatterbox-calc">
+							<div class="calc-blocks calcs">
+								<label class="gb-label calc-labels"><h6>1. How much data do you want?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="gb">
+									<button id="1gb" value="14" type="button" class="c-gb-button btn btn-primary btn-lg">1GB</button>
+									<button id="6gb" value="18" type="button" class="c-gb-button btn btn-primary btn-lg">6GB</button>
+									<button id="10gb" value="20" type="button" class="c-gb-button btn btn-primary btn-lg">10GB</button>
+									<button id="20gb" value="30" type="button" class="c-gb-button btn btn-primary btn-lg">20GB</button>
+								</div>
+							</div>
+							<div class="calc-blocks">
+								<label class="mins-label calc-labels"><h6>2. How many minutes do you want?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="mins">
+									<button id="180mins" data-mins="3" type="button" class="mins-button btn btn-primary btn-lg">180 mins</button>
+									<button id="300mins" data-mins="5" type="button" class="mins-button btn btn-primary btn-lg">300 mins</button>
+									<button id="600mins" data-mins="10" type="button" class="mins-button btn btn-primary btn-lg">600 mins</button>
+									<button id="unlimited_mins" data-mins="12" type="button" class="mins-button btn btn-primary btn-lg">Unlimited mins</button>
+								</div>
+							</div>
 
-						<div id="pay-frequency">
-							<button id="monthly" data-billing="1" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Monthly payment</button>
-							<button id="annually" data-billing="12" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Annual payment</button>
+							<div class="calc-blocks">
+								<label class="pay-frequency-label calc-labels"><h6>3. How do you want to be billed?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="pay-frequency">
+									<button id="monthly" data-billing="1" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Monthly</button>
+									<button id="annually" data-billing="12" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Annually</button>
+								</div>
+							</div>
+						<div class="final-price-block">
+							<h5 class="display-4">Price: £<span id = "final-price-lw"> </span></h5>
 						</div>
-						<div>
-							<h5>Price: £<span id = "final-price-c"> </span></h5>
-						</div>
-					</section> <!--END OF CHATTERBOX-->
-				</div><!--END OF COL-MD-10-->
-				<div class="col-md-2">
-					<button type="button" class="btn btn-primary btn-lg">Buy Lone Wolf now!</button>
-				</div><!--END OF COL-MD-2-->
-			</div> <!--END OF ROW FOR CALCULATOR AND CALL-TO-ACTION-BUTTON-->
+					</section>
+				</div>
+
+				<!-- END OF CHATTERBOX -->
+				<!-- START OF FAMILY -->
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					<section id="family-calc">
+						<h2>Family</h2>
+						<p>
+							Package coming soon! Watch this space :)
+						</p>
+					</section>
+				</div>
+			</div>
+				<!-- END OF FAMILY -->
 		</section>
 <!-- END OF CALCULATOR -->
+
 		</main>
 
 <!-- FOOTER -->
@@ -138,7 +197,7 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-md-12 py-5">
+        <div class="sm-icons col-md-12 py-5 text-center">
           <div class="mb-5 flex-center">
 
             <!-- Facebook -->
