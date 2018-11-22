@@ -5,6 +5,12 @@ box-sizing: border-box;
 -webkit-text-size-adjust: auto;
 }
 
+.jumbotron {
+  background-image:url("https://media.giphy.com/media/UYBDCJjwOd9Re/giphy.gif");
+  background-repeat: repeat;
+  padding: 5%;
+}
+
 #wrapper {
   width: 1024px;
   margin: 0 auto;
@@ -62,16 +68,43 @@ box-sizing: border-box;
 .btn-group{
   max-width: 70%;
 }
+.btn{
+  background-color: #C3D677;
+  padding: none;
+  border-color: #94AB34;
+}
+.btn:hover{
+  background-color: #94AB34;
+  border-color: #94AB34;
+}
+.btn:focus{
+  background-color: #94AB34;
+  box-shadow: none;
+}
+.btn:active {
+  border-color:  #94AB34!important;
+  background-color: #94AB34!important;
+}
+.btn:active, .btn:focus {
+  box-shadow: red;
+  border-color: red;
+}
 .final-price-block h5{
   font-size: 30px;
   padding-top: 30px;
 }
 
+/* PACKAGES */
 #packages {
-  background-color: blue;
+  /* background-color: blue; */
   padding: 30px;
 }
+.overview {
+  background-color: red;
+  padding: 20px;
+}
 
+/* MISSION */
 #mission {
   background-color: yellow;
   padding: 30px;
@@ -86,6 +119,7 @@ box-sizing: border-box;
 	border-radius: .4em;
   max-width: 85%;
   padding: 15px;
+
 }
 
 #speech-bubble:after {
@@ -102,31 +136,25 @@ box-sizing: border-box;
 	margin-left: -10.5px;
 	margin-top: -21px;
 }
-
+/* FOOTER */
 footer {
-  background-color:green;
+  background-color:#E9ECEF;
 }
-
 .fb-ic {
   color: #3b5998;
 }
-
 .tw-ic {
   color: #1da1f2;
 }
-
 .gplus-ic{
   color: #dd4b39;
 }
-
 .ins-ic {
   color: #e1306c;
 }
-
 .pin-ic {
   color: #bd081c;
 }
-
 /* CONTACT PAGE */
 .contact-form {
   padding: 10%;

@@ -7,7 +7,9 @@ var data_mins = 0;
 var final_price_c = 0;
 
 $('.lw-gb-button').click(function(event){
+  $('.lw-gb-button').css('color', 'white');
    gb_price = parseInt(this.getAttribute("value"));
+   $(this).css('color', 'red');
    console.log("GB price " + gb_price);
 });
 
@@ -65,3 +67,4 @@ function calc_final_price_c(){
 //     $('#final-price').text('dunno2');
 //   }
 // }
+// END OF CALCULATOR
