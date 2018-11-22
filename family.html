@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+	<head>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/custom.css" rel="stylesheet">
+
+		<title>Kable</title>
+
+	</head>
+	<body>
+
+
+<!-- NAVIGATION -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand" href="#"><img src="images/logos-backgrounds/logo-circle-nosource.png" height="42" width="42"/></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav" role="navigation">
+				<ul class="nav navbar-nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+
+					<li role="presentation" class="dropdown nav-item">
+				    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				      Packages <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu">
+				      <li>
+								<a class="dropdown-item" href="lone-wolf.html">Lone Wolf</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="chatterbox.html">Chatterbox</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="family.html">Family</a>
+							</li>
+				    </ul>
+				  </li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="./contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+<!-- END OF NAVIGATION -->
+
+<!-- UPPER PART -->
+		<header>
+			<div class="container package-page-overview">
+					<div class="row">
+						<div class="card col-md-6 card-border">
+							<img class="card-img-top img-fluid" src="images/logos-backgrounds/icon512/family.png" alt="A picture of a family, all smiling">
+						</div> <!-- COL-MD-6-->
+						<div class="card col-md-6 card-border">
+							<div class="card-body text-center">
+								<h1 class="display-4"><strong>Family</strong></h1>
+									<div class="text-without-heading">
+									<p id="short-description"> Up to 5 sim cards with data and unlimited minutes and texts</p>
+									<h3 >From £14</h3>
+									<button type="button" class="btn btn-primary btn-lg" id="call-to-action-buy-now-button">Buy Family plan now!</button>
+								</div><!--TEXT-WITHOUT-HEADING-->
+							</div> <!--TEXT FOR CARD ENDS HERE-->
+						</div> <!-- COL-MD-6-->
+					</div><!--ROW-->
+			</div> <!--CONTAINER PACKAGE-PAGE-OVERVIEW-->
+	</header>
+<!-- END OF UPPER PART -->
+
+<!-- PACKAGE INFO -->
+		<section class="container info-on-each-package">
+			<p class="display-4">You love chatting and talking all day long and also you want to provide your family with multiple sim cards? The <strong>Family plan</strong> will be the perfect option for you!</p>
+			<p>This is what you get:</p>
+			<ul>
+				<li>Unlimited Data</li>
+				<li>Unlimited minutes and texts</li>
+				<li>1GB - (1 simcard): £14.00, (2 simcards): £21.20, (3 simcards): £28.40, (4 simcards): £35.60, (5 simcards): £42.80</li>
+				<li>10GB - (1 simcard): £20.00, (2 simcards): £32.00, (3 simcards): £44.00, (4 simcards): £56.00, (5 simcards): £68.00</li>
+				<li>20GB - (1 simcard): £30.00, (2 simcards): £50.00, (3 simcards): £70.00, (4 simcards): £90.00, (5 simcards): £110.00</li>
+				<li>40GB - (1 simcard): £40.00, (2 simcards): £68.00, (3 simcards): £96.00, (4 simcards): £124.00, (5 simcards): £152.00</li>
+				<li>Pay monthly / annually</li>
+			</ul>
+			<p>Not exactly what you're looking for? Check out our calculator below!</p>
+		</section>
+<!-- END OF PACKAGE INFO SECTION -->
+
+<!-- CALCULATOR -->
+		<main>
+		<section class="container" id="calculator">
+			<h2>Mobile Plan Calculator</h2>
+			<p id="calc-intro">
+				We know we offer the best value and service, but you might not know that. <span id="calc-subheading">Check out which mobile plan fits you best using our calculator.</span>
+			</p>
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			    <a class="nav-item nav-link active display-4" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-pressed="true"aria-selected="true">Lone Wolf</a>
+			    <a class="nav-item nav-link display-4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Chatterbox</a>
+			    <a class="nav-item nav-link display-4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Family</a>
+			  </div>
+			</nav>
+
+		<!-- CONTENT -->
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+					<!-- LONEWOLF -->
+					<section id="lonewolf-calc">
+							<div class="calc-blocks">
+								<label class="gb-label calc-labels"><h6>1. How much data do you want?</h6></label>
+								<div class="btn-group gb-btn-grp" role="group" aria-label="Basic example" id="gb">
+										<button id="3gb" value="15" type="button" class="lw-gb-button btn btn-primary btn-lg">3GB</button>
+										<button id="6gb" value="17" type="button" class="lw-gb-button btn btn-primary btn-lg">6GB</button>
+										<button id="15gb" value="22" type="button" class="lw-gb-button btn btn-primary btn-lg">15GB</button>
+										<button id="30gb" value="27" type="button" class="lw-gb-button btn btn-primary btn-lg">30GB</button>
+								</div>
+							</div>
+							<div class="calc-blocks">
+								<label class="pay-frequency-label calc-labels"><h6>2. How do you want to be billed?</h6></label>
+								<div class="btn-group pay-frequency-btn-grp" role="group" aria-label="Basic example" id="pay-frequency">
+										<button id="monthly" data-billing="1" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Monthly</button>
+										<button id="annually" data-billing="12" type="button" class="lw-pay-frequency-button btn btn-primary btn-lg">Annually</button>
+								</div>
+							</div>
+
+						<div class="final-price-block">
+							<h5 class="display-4">Price: £<span id = "final-price-lw"> </span></h5>
+						</div>
+					</section>
+					<!-- END OF LW -->
+				</div>
+
+					<!-- CHATTERBOX -->
+
+				  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<!-- CHATTERBOX -->
+					<section id="chatterbox-calc">
+							<div class="calc-blocks calcs">
+								<label class="gb-label calc-labels"><h6>1. How much data do you want?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="gb">
+									<button id="1gb" value="14" type="button" class="c-gb-button btn btn-primary btn-lg">1GB</button>
+									<button id="6gb" value="18" type="button" class="c-gb-button btn btn-primary btn-lg">6GB</button>
+									<button id="10gb" value="20" type="button" class="c-gb-button btn btn-primary btn-lg">10GB</button>
+									<button id="20gb" value="30" type="button" class="c-gb-button btn btn-primary btn-lg">20GB</button>
+								</div>
+							</div>
+							<div class="calc-blocks">
+								<label class="mins-label calc-labels"><h6>2. How many minutes do you want?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="mins">
+									<button id="180mins" data-mins="3" type="button" class="mins-button btn btn-primary btn-lg">180 mins</button>
+									<button id="300mins" data-mins="5" type="button" class="mins-button btn btn-primary btn-lg">300 mins</button>
+									<button id="600mins" data-mins="10" type="button" class="mins-button btn btn-primary btn-lg">600 mins</button>
+									<button id="unlimited_mins" data-mins="12" type="button" class="mins-button btn btn-primary btn-lg">Unlimited mins</button>
+								</div>
+							</div>
+
+							<div class="calc-blocks">
+								<label class="pay-frequency-label calc-labels"><h6>3. How do you want to be billed?</h6></label>
+								<div class="btn-group" role="group" aria-label="Basic example" id="pay-frequency">
+									<button id="monthly" data-billing="1" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Monthly</button>
+									<button id="annually" data-billing="12" type="button" class="c-pay-frequency-button btn btn-primary btn-lg">Annually</button>
+								</div>
+							</div>
+						<div class="final-price-block">
+							<h5 class="display-4">Price: £<span id = "final-price-lw"> </span></h5>
+						</div>
+					</section>
+				</div>
+
+				<!-- END OF CHATTERBOX -->
+				<!-- START OF FAMILY -->
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					<section id="family-calc">
+						<h2>Family</h2>
+						<p>
+							Package coming soon! Watch this space :)
+						</p>
+					</section>
+				</div>
+			</div>
+				<!-- END OF FAMILY -->
+		</section>
+<!-- END OF CALCULATOR -->
+
+		</main>
+
+<!-- FOOTER -->
+<footer class="page-footer font-small">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="sm-icons col-md-12 py-5 text-center">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a href="https://en-gb.facebook.com/" class="fb-ic">
+              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/" class="tw-ic">
+              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a href="https://accounts.google.com/signin/v2/identifier?hl=En&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="gplus-ic">
+              <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a href="https://uk.linkedin.com/" class="li-ic">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a href="https://www.instagram.com/?hl=en" class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a href="https://www.pinterest.co.uk/" class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+<!-- END OF FOOTER -->
+
+<!-- jQuery, bootstrap bootstrap.min.js -->
+	<script
+		src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<script src="./js/engine.js"></script>
+	</body>
+
+</html>
