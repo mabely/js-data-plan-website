@@ -14,6 +14,33 @@ box-sizing: border-box;
   background-color: Salmon;
   padding: 30px;
 }
+.calc-heading{
+  padding-bottom: 20px;
+}
+.calc-blocks{
+  padding-bottom: 30px;
+}
+.calc-labels{
+  padding-bottom: 5px;
+}
+
+#lonewolf-calc {
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.calc-labels{
+  display: block;
+
+}
+
+.btn-group{
+  max-width: 70%;
+
+}
+.pay-frequency-btn-grp{
+
+}
 
 #packages {
   background-color: blue;
@@ -34,7 +61,6 @@ box-sizing: border-box;
 	border-radius: .4em;
   max-width: 85%;
   padding: 15px;
-
 }
 
 #speech-bubble:after {
