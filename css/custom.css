@@ -17,7 +17,7 @@ box-sizing: border-box;
 }
 /* CALCULATOR STYLING */
 #calculator{
-  background-color: MistyRose;
+  background-color: Linen;
   padding: 40px;
 }
 #calculator h2{
@@ -35,9 +35,6 @@ box-sizing: border-box;
 }
 #nav-tab a:hover{
   color: black;
-}
-#nav-item{
-  background-color: red;
 }
 .calc-heading{
   padding-bottom: 20px;
@@ -70,7 +67,6 @@ box-sizing: border-box;
 }
 .btn{
   background-color: #C3D677;
-  padding: none;
   border-color: #94AB34;
 }
 .btn:hover{
@@ -98,7 +94,10 @@ box-sizing: border-box;
 /* PACKAGES */
 #packages {
   /* background-color: blue; */
-  padding: 30px;
+  padding: 40px;
+}
+#packages h2{
+  padding-bottom: 15px;
 }
 .overview {
   background-color: red;
@@ -108,7 +107,7 @@ box-sizing: border-box;
 /* MISSION */
 #mission {
   background-color: yellow;
-  padding: 30px;
+  padding: 40px;
 }
 #mission h2{
   padding-bottom: 40px;

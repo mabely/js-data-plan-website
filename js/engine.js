@@ -28,17 +28,23 @@ function calc_final_price_lw(){
 
 //CHATTERBOX STARTES HERE:
 $('.c-gb-button').click(function(event){
+  $('.c-gb-button').css('background-color', '#C3D677');
    gb_price = parseInt(this.getAttribute("value"));
+   $(this).css('background-color', '#94AB34');
    console.log("GB price " + gb_price);
 });
 
 $('.mins-button').click(function(event){
+$('.mins-button').css('background-color', '#C3D677');
 data_mins = parseInt(this.getAttribute("data-mins"));
+$(this).css('background-color', '#94AB34');
 console.log('Mins price ' + data_mins);
 });
 
 $('.c-pay-frequency-button').click(function(event){
+$('.c-pay-frequency-button').css('background-color', '#C3D677');
 billing_frequency = parseInt(this.getAttribute("data-billing"));
+$(this).css('background-color', '#94AB34');
 console.log("Billing freq " + billing_frequency);
 calc_final_price_c();
 });
