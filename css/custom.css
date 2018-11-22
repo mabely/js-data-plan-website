@@ -9,10 +9,29 @@ box-sizing: border-box;
   width: 1024px;
   margin: 0 auto;
 }
-
+/* CALCULATOR STYLING */
 #calculator{
-  background-color: Salmon;
-  padding: 30px;
+  background-color: MistyRose;
+  padding: 40px;
+}
+#calculator h2{
+  padding-bottom: 20px;
+}
+#calc-subheading{
+  font-weight: bold;
+  display: block;
+  padding-bottom: 20px;
+}
+#nav-tab a{
+  color: DimGrey;
+  font-size: 30px;
+  padding: 15px;
+}
+#nav-tab a:hover{
+  color: black;
+}
+#nav-item{
+  background-color: red;
 }
 .calc-heading{
   padding-bottom: 20px;
@@ -21,6 +40,7 @@ box-sizing: border-box;
   padding-bottom: 30px;
 }
 .calc-labels{
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
@@ -28,18 +48,15 @@ box-sizing: border-box;
   padding: 20px;
   max-width: 1000px;
 }
-
 .calc-labels{
   display: block;
-
 }
-
 .btn-group{
   max-width: 70%;
-
 }
-.pay-frequency-btn-grp{
-
+.final-price-block h5{
+  font-size: 30px;
+  padding-top: 30px;
 }
 
 #packages {
