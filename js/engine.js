@@ -6,7 +6,10 @@ var billing_frequency = 0;
 var data_mins = 0;
 var final_price_c = 0;
 
+// hide price
+
 $('.lw-gb-button').click(function(event){
+  // hide price
   $('.lw-gb-button').css('background-color', '#C3D677');
    gb_price = parseInt(this.getAttribute("value"));
    $(this).css('background-color', '#94AB34');
@@ -24,10 +27,12 @@ function calc_final_price_lw(){
   final_price_lw = gb_price * billing_frequency;
   console.log("LW final price " + final_price_lw);
     $('#final-price-lw').text(final_price_lw);
+    //show price
 }
 
 //CHATTERBOX STARTES HERE:
 $('.c-gb-button').click(function(event){
+  // hide price
   $('.c-gb-button').css('background-color', '#C3D677');
    gb_price = parseInt(this.getAttribute("value"));
    $(this).css('background-color', '#94AB34');
@@ -35,6 +40,7 @@ $('.c-gb-button').click(function(event){
 });
 
 $('.mins-button').click(function(event){
+  // hide price
 $('.mins-button').css('background-color', '#C3D677');
 data_mins = parseInt(this.getAttribute("data-mins"));
 $(this).css('background-color', '#94AB34');
@@ -53,6 +59,7 @@ function calc_final_price_c(){
   final_price_c = (gb_price + data_mins) * billing_frequency;
   console.log('C final price ' + final_price_c);
     $('#final-price-c').text(final_price_c);
+        //show price
 }
 
 //

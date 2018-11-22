@@ -93,8 +93,10 @@ box-sizing: border-box;
 
 /* PACKAGES */
 #packages {
-  /* background-color: blue; */
-  padding: 40px;
+  /* padding: 40px; */
+}
+.card-body {
+  padding: 0%;
 }
 #packages h2{
   padding-bottom: 15px;
@@ -106,7 +108,7 @@ box-sizing: border-box;
 
 /* MISSION */
 #mission {
-  background-color: yellow;
+  background-color: #F6BD60;
   padding: 40px;
 }
 #mission h2{
@@ -115,11 +117,10 @@ box-sizing: border-box;
 
 #speech-bubble {
   position: relative;
-	background: #00aabb;
+	background: white;
 	border-radius: .4em;
   max-width: 85%;
   padding: 15px;
-
 }
 
 #speech-bubble:after {
@@ -130,7 +131,7 @@ box-sizing: border-box;
 	width: 0;
 	height: 0;
 	border: 21px solid transparent;
-	border-bottom-color: #00aabb;
+	border-bottom-color: white;
 	border-top: 0;
 	border-left: 0;
 	margin-left: -10.5px;
@@ -159,4 +160,38 @@ footer {
 .contact-form {
   padding: 10%;
   background-color: yellow;
+}
+
+/* PACKAGE-PAGES */
+
+@media screen and (max-width: 769px) {
+  header {
+    padding-top: 5%;
+  }
+}
+
+.package-page-overview {
+  padding-top: 5%;
+}
+
+.card-border {
+  border: none;
+  padding:5%;
+}
+
+.text-without-heading {
+  padding: 10%;
+}
+
+#short-description {
+  font-size: 20px;
+}
+
+#call-to-action-buy-now-button {
+  margin: 10%;
+}
+
+.info-on-each-package {
+  background-color: red;
+  padding: 40px;
 }
