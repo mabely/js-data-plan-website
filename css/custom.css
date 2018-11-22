@@ -101,3 +101,9 @@ footer {
 .pin-ic {
   color: #bd081c;
 }
+
+/* CONTACT PAGE */
+.contact-form {
+  padding: 10%;
+  background-color: yellow;
+}
