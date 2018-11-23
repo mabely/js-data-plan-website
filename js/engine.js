@@ -5,6 +5,9 @@ var final_price_lw = 0;
 var billing_frequency = 0;
 var data_mins = 0;
 var final_price_c = 0;
+var f_increment = 0;
+var f_inc_math = 0;
+var calc_sum_f = 0;
 
 // hide price
 $('.final-price-block').hide();
@@ -72,6 +75,50 @@ function calc_final_price_c(){
   $('.final-price-block').show();
 }
 
+
+//FAMILY STARTS HERE
+$('.f-gb-button').click(function(event){
+  // hide price
+  $('.final-price-block').hide();
+  $('.f-gb-button').css('background-color', '#C3D677');
+  $('.f-sim-button').css('background-color', '#C3D677');
+    $('.f-pay-frequency-button').css('background-color', '#C3D677');
+
+  gb_price = parseInt(this.getAttribute("value"));
+  $(this).css('background-color', '#94AB34');
+  console.log("GB price " + gb_price);
+  f_increment = parseInt(this.getAttribute("data-increment"));
+  console.log("Increment " + f_increment);
+});
+
+$('.f-sim-button').click(function(event){
+  // hide price
+  $('.final-price-block').hide();
+  $('.f-sim-button').css('background-color', '#C3D677');
+  // $('.c-gb-button').css('background-color', '#C3D677');
+  $('.f-pay-frequency-button').css('background-color', '#C3D677');
+  f_inc_math = parseInt(this.getAttribute("data-inc-math"));
+  $(this).css('background-color', '#94AB34');
+  console.log('Increment math ' + f_inc_math);
+  calc_sum_f = (f_increment* f_inc_math) + gb_price;
+  console.log('Price before billing option ' + calc_sum_f);
+});
+
+$('.f-pay-frequency-button').click(function(event){
+  $('.f-pay-frequency-button').css('background-color', '#C3D677');
+  billing_frequency = parseInt(this.getAttribute("data-billing"));
+  $(this).css('background-color', '#94AB34');
+  console.log("Billing freq " + billing_frequency);
+  calc_final_price_f();
+});
+
+function calc_final_price_f (){
+final_price_f = calc_sum_f * billing_frequency;
+console.log('F final price ' + final_price_f);
+$('#final-price-f').text(final_price_f);
+//show price
+$('.final-price-block').show();
+}
 //
 // var gb = prices();
 // for (i=0; i<3; i++){

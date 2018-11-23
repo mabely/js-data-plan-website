@@ -184,12 +184,45 @@
 				<!-- START OF FAMILY -->
 			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 					<section id="family-calc">
-						<h2>Family</h2>
-						<p>
-							Package coming soon! Watch this space :)
-						</p>
-					</section>
-				</div>
+					<div class="calc-blocks calcs">
+						<label class="gb-label calc-labels">
+							<h6>1. How much data do you want?</h6>
+						</label>
+						<div class="btn-group" role="group" aria-label="Basic example" id="gb">
+							<button id="1gb" value="14" data-increment="7.20" type="button" class="f-gb-button btn btn-primary btn-lg">1GB</button>
+							<button id="10gb" value="20" data-increment="12" type="button" class="f-gb-button btn btn-primary btn-lg">10GB</button>
+							<button id="20gb" value="30"data-increment="20" type="button" class="f-gb-button btn btn-primary btn-lg">20GB</button>
+							<button id="40gb" value="40" data-increment="28" type="button" class="f-gb-button btn btn-primary btn-lg">40GB</button>
+						</div>
+					</div>
+					<div class="calc-blocks">
+						<label class="sim-label calc-labels">
+							<h6>2. How many sim cards do you want?</h6>
+						</label>
+						<div class="btn-group" role="group" aria-label="Basic example" id="sims">
+							<button id="1sim" data-inc-math="0" type="button" class="f-sim-button btn btn-primary btn-lg">1</button>
+							<button id="2sim" data-inc-math="1" type="button" class="f-sim-button btn btn-primary btn-lg">2</button>
+							<button id="3sim" data-inc-math="2" type="button" class="f-sim-button btn btn-primary btn-lg">3</button>
+							<button id="4sim" data-inc-math="3" type="button" class="f-sim-button btn btn-primary btn-lg">4</button>
+							<button id="5sim" data-inc-math="4" type="button" class="f-sim-button btn btn-primary btn-lg">5</button>
+						</div>
+					</div>
+
+					<div class="calc-blocks">
+						<label class="pay-frequency-label calc-labels">
+							<h6>3. How do you want to be billed?</h6>
+						</label>
+						<div class="btn-group" role="group" aria-label="Basic example" id="pay-frequency">
+							<button id="monthly" data-billing="1" type="button" class="f-pay-frequency-button btn btn-primary btn-lg">Monthly</button>
+							<button id="annually" data-billing="12" type="button" class="f-pay-frequency-button btn btn-primary btn-lg">Annually</button>
+						</div>
+					</div>
+					<div class="final-price-block">
+						<h5 class="display-4">Price: £<span id="final-price-f"> </span></h5>
+						<div id="cta">
+							<button type="button" class="btn btn-primary btn-lg" id="calc-cta">Buy now!</button>
+						</div>
+				</section>
 			</div>
 				<!-- END OF FAMILY -->
 		</section>
