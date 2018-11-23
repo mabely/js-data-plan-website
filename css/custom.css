@@ -90,6 +90,13 @@ box-sizing: border-box;
   font-size: 30px;
   padding-top: 30px;
 }
+#cta{
+  padding-top: 15px;
+}
+#calc-cta{
+  background-color: #F8BB18;
+  border: none;
+}
 
 /* PACKAGES */
 #packages {
@@ -106,11 +113,18 @@ box-sizing: border-box;
   background-color: #F8F9FA;
   padding: 20px;
 }
+@media (min-width: 769px) and (max-width: 991px){
+  #pack-block-f{
+    margin-bottom: 55px;
+  }
+}
+
 
 /* MISSION */
 #mission {
-  background-color: #F6BD60;
+  background-color: rgba(238, 239, 0, 0.33);
   padding: 40px;
+
 }
 #mission h2{
   padding-bottom: 40px;
@@ -160,7 +174,7 @@ footer {
 /* CONTACT PAGE */
 .contact-form {
   padding: 10%;
-  background-color: yellow;
+  background-color: #C3D677;
 }
 
 /* PACKAGE-PAGES */
@@ -174,7 +188,6 @@ footer {
 .package-page-overview {
   padding-top: 5%;
 }
-
 .card-border {
   border: none;
   padding:5%;
@@ -193,6 +206,6 @@ footer {
 }
 
 .info-on-each-package {
-  background-color: red;
+  background-color: rgba(238, 239, 0, 0.33);
   padding: 40px;
 }

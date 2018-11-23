@@ -74,7 +74,7 @@
 			    <a class="nav-item nav-link display-4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Family</a>
 			  </div>
 			</nav>
-			
+
 		<!-- CONTENT -->
 			<div class="tab-content" id="nav-tabContent">
 			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -101,6 +101,9 @@
 
 						<div class="final-price-block">
 							<h5 class="display-4">Price: £<span id = "final-price-lw"> </span></h5>
+							<div id="cta">
+								<button type="button" class="btn btn-primary btn-lg" id="calc-cta">Buy now!</button>
+							</div>
 						</div>
 					</section>
 					<!-- END OF LW -->
@@ -139,6 +142,8 @@
 							</div>
 						<div class="final-price-block">
 							<h5 class="display-4">Price: £<span id = "final-price-c"> </span></h5>
+						<div id="cta">
+							<button type="button" class="btn btn-primary btn-lg" id="calc-cta">Buy now!</button>
 						</div>
 					</section>
 				</div>
@@ -176,7 +181,7 @@
 					  <img class="card-img-top" src="images/logos-backgrounds/icon512/like (1).png" alt="Picture of the world and two speechbubbles with hearts inside">
 					  <div class="card-body text-center">
 					    <h1 class="card-title display-4">Chatterbox</h1>
-					    <p class="card-text text-center">Data and minutes</p>
+					    <p class="card-text">Data and minutes</p>
 							<h5 class="card-text">From £14</h5>
 					    <a href="chatterbox.html" class="btn btn-primary">Find out more!</a>
 					  </div>
@@ -185,10 +190,10 @@
 					<div class="card col-md-4 overview">
 					  <img class="card-img-top" src="images/logos-backgrounds/icon512/family.png" alt="Picture of a family, all smiling">
 					  <div class="card-body text-center">
-					    <h1 class="card-title display-4">Family</h1>
+					    <h1 class="card-title display-4" id="pack-block-f">Family</h1>
 					    <p class="card-text">Data, minutes and multiple simcards</p>
 							<h5 class="card-text">From £14</h5>
-					    <a href="family.html" class="btn btn-primary">Find out more</a>
+					    <a href="family.html" class="btn btn-primary" id="pack-cta-f">Find out more</a>
 					  </div>
 					</div>
 			</div><!--Closing Packages card row-->
@@ -257,8 +262,7 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">Katie & Mabel Designs 2018
     </div>
     <!-- Copyright -->
 
