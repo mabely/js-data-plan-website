@@ -7,9 +7,11 @@ var data_mins = 0;
 var final_price_c = 0;
 
 // hide price
+$('.final-price-block').hide();
 
 $('.lw-gb-button').click(function(event){
   // hide price
+  $('.final-price-block').hide();
   $('.lw-gb-button').css('background-color', '#C3D677');
    gb_price = parseInt(this.getAttribute("value"));
    $(this).css('background-color', '#94AB34');
@@ -28,38 +30,46 @@ function calc_final_price_lw(){
   console.log("LW final price " + final_price_lw);
     $('#final-price-lw').text(final_price_lw);
     //show price
+    $(".final-price-block").show();
 }
 
 //CHATTERBOX STARTES HERE:
 $('.c-gb-button').click(function(event){
   // hide price
+  $('.final-price-block').hide();
   $('.c-gb-button').css('background-color', '#C3D677');
-   gb_price = parseInt(this.getAttribute("value"));
-   $(this).css('background-color', '#94AB34');
-   console.log("GB price " + gb_price);
+  $('.mins-button').css('background-color', '#C3D677');
+    $('.c-pay-frequency-button').css('background-color', '#C3D677');
+  gb_price = parseInt(this.getAttribute("value"));
+  $(this).css('background-color', '#94AB34');
+  console.log("GB price " + gb_price);
 });
 
 $('.mins-button').click(function(event){
   // hide price
-$('.mins-button').css('background-color', '#C3D677');
-data_mins = parseInt(this.getAttribute("data-mins"));
-$(this).css('background-color', '#94AB34');
-console.log('Mins price ' + data_mins);
+  $('.final-price-block').hide();
+  $('.mins-button').css('background-color', '#C3D677');
+  // $('.c-gb-button').css('background-color', '#C3D677');
+  $('.c-pay-frequency-button').css('background-color', '#C3D677');
+  data_mins = parseInt(this.getAttribute("data-mins"));
+  $(this).css('background-color', '#94AB34');
+  console.log('Mins price ' + data_mins);
 });
 
 $('.c-pay-frequency-button').click(function(event){
-$('.c-pay-frequency-button').css('background-color', '#C3D677');
-billing_frequency = parseInt(this.getAttribute("data-billing"));
-$(this).css('background-color', '#94AB34');
-console.log("Billing freq " + billing_frequency);
-calc_final_price_c();
+  $('.c-pay-frequency-button').css('background-color', '#C3D677');
+  billing_frequency = parseInt(this.getAttribute("data-billing"));
+  $(this).css('background-color', '#94AB34');
+  console.log("Billing freq " + billing_frequency);
+  calc_final_price_c();
 });
 
 function calc_final_price_c(){
   final_price_c = (gb_price + data_mins) * billing_frequency;
   console.log('C final price ' + final_price_c);
-    $('#final-price-c').text(final_price_c);
-        //show price
+  $('#final-price-c').text(final_price_c);
+  //show price
+  $('.final-price-block').show();
 }
 
 //

@@ -93,7 +93,8 @@ box-sizing: border-box;
 
 /* PACKAGES */
 #packages {
-  /* padding: 40px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .card-body {
   padding: 0%;
@@ -102,7 +103,7 @@ box-sizing: border-box;
   padding-bottom: 15px;
 }
 .overview {
-  background-color: red;
+  background-color: #F8F9FA;
   padding: 20px;
 }
 
